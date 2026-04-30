@@ -1,40 +1,26 @@
 # AI Helper Resources 🤖
 
-A collection of AI-powered skills, commands, and resources designed to streamline development workflows using Gemini CLI.
+A modular collection of skills and resources for [Gemini CLI](https://github.com/google/gemini-cli).
 
-## 🛠 Skills
+## 🛠 Available Skills
 
-Skills are modular packages that extend Gemini CLI's capabilities with specialized domain knowledge and workflows.
+| Skill | Description | Installation Command |
+| :--- | :--- | :--- |
+| **Flink OSS Setup** | Local Flink setup via K8s Operator. | `gemini skills install https://github.com/spuru9/ai-helper.git --path skills/flink-oss-setup` |
+| **Flink PR Reviewer**| In-depth PR analysis for Flink. | `gemini skills install https://github.com/spuru9/ai-helper.git --path skills/flink-pr-reviewer` |
 
-### [Flink OSS Setup](./skills/flink-oss-setup)
-Guided setup for Apache Flink OSS locally using Kubernetes Operator. It dynamically fetches version-specific assets from the official Flink Docker repository.
+## 🚀 Quick Start
 
-**Installation:**
-```bash
-gemini skills install https://github.com/spuru9/ai-helper.git --path skills/flink-oss-setup --scope user
-```
-
-**Usage:**
-After installation, reload your skills:
-```bash
-/skills reload
-```
-Then simply ask Gemini: *"Help me setup Flink OSS locally"*
+1. **Install**: Copy the command from the table above.
+2. **Reload**: Run `/skills reload` in your Gemini CLI session.
+3. **Verify**: Use `/skills list` to confirm.
 
 ---
 
-## 🚀 Installation & Setup
-
-1. **Prerequisites**: Ensure you have [Gemini CLI](https://github.com/google/gemini-cli) installed.
-2. **Install a Skill**: Use the `gemini skills install` command with the `--path` flag pointing to the specific skill directory.
-3. **Reload**: Run `/skills reload` in your active Gemini session to enable new skills.
-
-## 📂 Repository Structure
-
-- `skills/`: Specialized agentic workflows and procedural knowledge.
-- `commands/`: (Planned) Custom shell scripts and aliases.
-- `prompts/`: (Planned) Reusable system and task-specific prompts.
+## 📂 Structure
+- `skills/`: Specialized agentic workflows.
+- `commands/`: (Planned) Custom shell scripts.
+- `prompts/`: (Planned) Reusable system prompts.
 
 ## 🤝 Contributing
-
-Feel free to open issues or submit pull requests to add new skills or improve existing ones.
+Submit a PR to add new skills to the `skills/` directory.
