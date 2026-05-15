@@ -1,0 +1,13 @@
+{
+  "name": "ai-helper",
+  "owner": {
+    "name": "spuru9"
+  },
+  "plugins": [
+    {
+      "name": "ai-helper",
+      "source": ".",
+      "description": "Flink OSS setup and in-depth PR review skills for Apache Flink."
+    }
+  ]
+}

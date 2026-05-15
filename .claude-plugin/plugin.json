@@ -1,0 +1,8 @@
+{
+  "name": "ai-helper",
+  "description": "Flink OSS setup and in-depth PR review skills for Apache Flink.",
+  "version": "0.1.0",
+  "author": {
+    "name": "spuru9"
+  }
+}
